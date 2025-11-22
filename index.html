@@ -20,7 +20,6 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            overflow: hidden;
         }
 
         .container {
@@ -95,10 +94,10 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">M</div>
+    <div class="container" role="main" aria-live="polite" aria-label="Loading application">
+        <div class="logo" aria-hidden="true">M</div>
         <div class="loading-text">Loading...</div>
-        <div class="spinner"></div>
+        <div class="spinner" role="status" aria-label="Loading spinner"></div>
     </div>
 </body>
 </html>
